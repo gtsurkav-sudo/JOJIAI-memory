@@ -1,1 +1,14 @@
-{"segment":"projects","retention_days":30,"projects":[{"project_id":"844302d9-1502-4c42-acf4-3f20c74fd3cb","name":"JOJIAI Launch","status":"in_progress"}],"version":"2.2"}
+{
+  "segment": "projects",
+  "retention_days": 30,
+  "projects": [
+    {
+      "project_id": "844302d9-1502-4c42-acf4-3f20c74fd3cb",
+      "name": "JOJIAI Launch",
+      "status": "in_progress",
+      "last_updated": "2025-08-22T18:27:20.740619Z"
+    }
+  ],
+  "version": "2.2",
+  "last_updated": "2025-08-22T18:27:20.740619Z"
+}
