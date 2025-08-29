@@ -6,31 +6,30 @@
     {
       "dialogue_id": "2025-08-29",
       "date": "2025-08-29",
-      "summary": "Короткое резюме дня",
+      "summary": "Agent tick: автосаммари и фиксация ключевых фактов.",
       "topics": [
-        "интеграция",
-        "агент",
-        "git"
+        "agent_mode",
+        "autosync",
+        "memory"
       ],
       "decisions": [
-        "Включить агент по расписанию"
+        "Продолжаем автосаммари ежедневно"
       ],
       "next_steps": [
-        "Проверить фоновые логи",
+        "Синк в Git",
         "Добавить метрики"
       ],
       "key_info": [
-        "Путь к памяти: ~/JOJIAI-memory/memory"
+        "Источник истины — Git",
+        "retention_days=90"
       ],
       "accepted_answers": [
-        "Формат дневных резюме утверждён"
+        "Автосохранение активировано"
       ],
       "formal_decisions": [
-        "Daily-run: 20:00 Tbilisi time"
+        "Agent Mode: ON"
       ],
-      "artifacts": [
-        "https://github.com/gtsurkav-sudo/JOJIAI-memory"
-      ]
+      "artifacts": []
     }
   ],
   "version": "2.2"
