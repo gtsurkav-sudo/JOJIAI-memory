@@ -1,0 +1,9 @@
+
+# Core dependencies
+prometheus-client>=0.17.0
+python-json-logger>=2.0.0
+click>=8.0.0
+
+# Optional monitoring dependencies
+grafana-client>=3.5.0
+alertmanager-client>=1.0.0
