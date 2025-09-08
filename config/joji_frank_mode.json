@@ -1,0 +1,97 @@
+
+{
+  "frank_mode": {
+    "enabled": false,
+    "version": "1.0.0",
+    "rollout_stage": "disabled",
+    "rollout_percentage": 0
+  },
+  
+  "policy_levels": {
+    "allow": {
+      "max_disclaimer_lines": 0,
+      "anti_moralizing": true,
+      "directness_threshold": 80
+    },
+    "frank_response": {
+      "max_disclaimer_lines": 1,
+      "anti_moralizing": true,
+      "directness_threshold": 70
+    },
+    "soft_refusal": {
+      "max_disclaimer_lines": 1,
+      "provide_alternatives": true,
+      "directness_threshold": 60
+    },
+    "hard_refusal": {
+      "max_disclaimer_lines": 1,
+      "provide_alternatives": true,
+      "directness_threshold": 50
+    }
+  },
+  
+  "content_filtering": {
+    "strict_mode": false,
+    "anti_moralizing": true,
+    "remove_hedging": true,
+    "max_hedging_words": 3
+  },
+  
+  "response_formatting": {
+    "structure": "reasoning_conclusion",
+    "max_disclaimer_lines": 1,
+    "include_alternatives_on_refusal": true,
+    "directness_optimization": true
+  },
+  
+  "metrics": {
+    "enabled": true,
+    "prometheus_port": 8000,
+    "log_level": "INFO",
+    "candor_score_enabled": true,
+    "quality_thresholds": {
+      "directness_min": 60,
+      "safety_min": 90,
+      "usefulness_min": 50
+    }
+  },
+  
+  "guardrails": {
+    "illegal_content": {
+      "enabled": true,
+      "severity": "hard_refusal"
+    },
+    "self_harm": {
+      "enabled": true,
+      "severity": "hard_refusal"
+    },
+    "graphic_violence": {
+      "enabled": true,
+      "severity": "hard_refusal"
+    },
+    "personal_data": {
+      "enabled": true,
+      "severity": "hard_refusal"
+    },
+    "system_manipulation": {
+      "enabled": true,
+      "severity": "soft_refusal"
+    }
+  },
+  
+  "feature_flags": {
+    "emergency_disable": false,
+    "canary_rollout": false,
+    "beta_testing": false,
+    "full_deployment": false,
+    "metrics_collection": true,
+    "structured_logging": true
+  },
+  
+  "quality_targets": {
+    "candor_score_target": 75,
+    "directness_score_target": 80,
+    "safety_score_target": 95,
+    "user_satisfaction_target": 85
+  }
+}
