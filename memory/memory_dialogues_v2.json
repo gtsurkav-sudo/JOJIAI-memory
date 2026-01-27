@@ -1,7 +1,7 @@
 {
   "segment": "dialogues",
   "retention_days": 90,
-  "last_updated": "2026-01-26",
+  "last_updated": "2026-01-27",
   "dialogues": [
     {
       "dialogue_id": "2025-08-29",
@@ -4122,6 +4122,34 @@
     {
       "dialogue_id": "2026-01-26",
       "date": "2026-01-26",
+      "summary": "Agent tick: автосаммари и фиксация ключевых фактов.",
+      "topics": [
+        "agent_mode",
+        "autosync",
+        "memory"
+      ],
+      "decisions": [
+        "Продолжаем автосаммари ежедневно"
+      ],
+      "next_steps": [
+        "Синк в Git",
+        "Добавить метрики"
+      ],
+      "key_info": [
+        "Источник истины — Git",
+        "retention_days=90"
+      ],
+      "accepted_answers": [
+        "Автосохранение активировано"
+      ],
+      "formal_decisions": [
+        "Agent Mode: ON"
+      ],
+      "artifacts": []
+    },
+    {
+      "dialogue_id": "2026-01-27",
+      "date": "2026-01-27",
       "summary": "Agent tick: автосаммари и фиксация ключевых фактов.",
       "topics": [
         "agent_mode",
